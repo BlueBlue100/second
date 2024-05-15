@@ -1,0 +1,64 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px; /* Default width for desktop */
+    background-color: #333;
+    transition: width 0.3s ease; /* Add transition for smoother resizing */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+    z-index: 1000; /* Ensure sidebar appears above other content */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px; /* Add margin bottom for gap between menu items */
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Ensure menu items fill entire width */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Adjust width for smaller screens */
+        height: 100vh; /* Expand to full height of viewport */
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar li {
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        width: 100%; /* Ensure menu items fill entire width */
+    }
+}
+
+/* Content Area CSS */
+.container {
+    max-width: calc(100% - 200px); /* Adjusted for sidebar width */
+    margin-left: 200px; /* Adjusted for sidebar width */
+    margin-top: 50px; /* Added margin to accommodate fixed sidebar */
+    padding: 20px;
+}
