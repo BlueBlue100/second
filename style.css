@@ -1,0 +1,54 @@
+.container {
+    max-width: calc(100% - 20px); /* Adjusted for spacing */
+    margin-left: 200px; /* Adjusted for sidebar width */
+    margin-top: 50px; /* Added margin to accommodate fixed sidebar */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0; /* Remove default margin */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+button {
+    display: block;
+    width: calc(100% - 20px); /* Adjusted for spacing */
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #FF9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f38b15;
+}
+
+#urlList {
+    margin-top: 20px;
+}
+
+.urlItem {
+    margin-bottom: 10px;
+}
